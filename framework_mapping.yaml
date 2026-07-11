@@ -1,0 +1,58 @@
+THREAT-001:
+
+  OWASP:
+
+    id: LLM01
+
+    name: Prompt Injection
+
+  MITRE:
+
+    id: AML.T0051
+
+    name: Prompt Injection
+
+
+THREAT-002:
+
+  OWASP:
+
+    id: LLM06
+
+    name: Sensitive Information Disclosure
+
+  MITRE:
+
+    id: AML.T0015
+
+    name: Data Poisoning
+
+
+THREAT-003:
+
+  OWASP:
+
+    id: LLM08
+
+    name: Excessive Agency
+
+  MITRE:
+
+    id: AML.T0011
+
+    name: Abuse of AI System
+
+
+THREAT-004:
+
+  OWASP:
+
+    id: LLM08
+
+    name: Excessive Agency
+
+  MITRE:
+
+    id: AML.T0011
+
+    name: Abuse of AI System

@@ -1,0 +1,78 @@
+rules:
+
+  - id: RULE-001
+
+    requires:
+      - LLM
+      - Retriever
+      - VectorDB
+
+    threat:
+
+      id: THREAT-001
+
+      name: Indirect Prompt Injection
+
+      severity: High
+
+      reason: >
+        The architecture retrieves external content through a retriever
+        and injects it into the LLM context.
+        Malicious documents may manipulate model behavior.
+
+
+  - id: RULE-002
+
+    requires:
+      - LLM
+      - Memory
+
+    threat:
+
+      id: THREAT-002
+
+      name: Memory Poisoning
+
+      severity: Medium
+
+      reason: >
+        Persistent memory can be modified with malicious information,
+        affecting future responses.
+
+
+  - id: RULE-003
+
+    requires:
+      - Agent
+      - Tool
+
+    threat:
+
+      id: THREAT-003
+
+      name: Tool Abuse
+
+      severity: Critical
+
+      reason: >
+        Agents capable of invoking external tools may perform
+        unintended or unauthorized actions.
+
+
+  - id: RULE-004
+
+    requires:
+      - LLM
+      - Tool
+
+    threat:
+
+      id: THREAT-004
+
+      name: Excessive Agency
+
+      severity: High
+
+      reason: >
+        The LLM can invoke external tools,
+        increasing attack surface and privilege.
