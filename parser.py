@@ -1,9 +1,9 @@
 import json
 from openai import OpenAI
+import os
 
 
-
-# GROQ_API_KEY = ""
+GROQ_API_KEY = os.getenv("API_KEY")
 
 # ==========================================================
 # Groq Client
