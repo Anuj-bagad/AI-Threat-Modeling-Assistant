@@ -1,11 +1,9 @@
 import json
 from openai import OpenAI
 
-# ==========================================================
-# Enter your Groq API Key here
-# ==========================================================
 
-GROQ_API_KEY = "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"
+
+# GROQ_API_KEY = ""
 
 # ==========================================================
 # Groq Client
@@ -15,6 +13,7 @@ client = OpenAI(
     api_key=GROQ_API_KEY,
     base_url="https://api.groq.com/openai/v1"
 )
+
 
 # ==========================================================
 # Model
