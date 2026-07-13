@@ -1,9 +1,10 @@
 import json
 from openai import OpenAI
 import os
+import streamlit as st
 
 
-GROQ_API_KEY = os.getenv("API_KEY")
+GROQ_API_KEY = st.secrets("GROQ_API_KEY")
 
 # ==========================================================
 # Groq Client
