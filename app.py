@@ -1,5 +1,6 @@
 import streamlit as st
 from parser import parse_architecture
+from parser import *
 from threat_engine import analyze_architecture
 
 st.set_page_config(
@@ -7,7 +8,7 @@ st.set_page_config(
     page_icon="🛡️",
     layout="wide"
 )
-
+st.write(GROQ_API_KEY)
 st.title("🛡️ AI Threat Modeling Assistant")
 st.markdown(
     """
